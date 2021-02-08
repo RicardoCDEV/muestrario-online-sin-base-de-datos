@@ -1,0 +1,286 @@
+.left-container{
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    
+}
+
+.right-container{
+    display: inline-block;
+    width: 290px;
+    height: auto;
+}
+
+.product-selected-backgraund{
+    position: fixed;
+
+    background-color: rgba(207, 201, 201,.8);
+    width: 100%;
+    height: 1200px;
+}
+
+.product-selected-section{
+    display: none;
+    position: absolute;
+    top: 0;
+    
+    width: 100%;
+}
+
+.product-selected-container{
+    width: 720px;
+    height: auto;
+    margin: auto;
+    margin-top: 55px;
+
+    background-color:#4C58A6;
+
+}
+
+.product-selected-image-container{
+    width: 400px;
+    height: 280px;
+    margin-bottom: 20px;
+    background-color: ivory;
+}
+
+.product-selected-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.case1{
+    height: 90%;
+    padding-top: 5px;
+}
+
+.case2{
+    height: 80%;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.case3{
+    height: 100%;
+    width: auto;
+}
+
+.product-selected-info{
+    width: 400px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.product-selected-name ,.product-selected-price,.product-selected-state{
+    margin-top: 5px;
+    margin-bottom: 0;
+    width: 100px;
+}
+
+.product-selected-name{
+    color: black;
+    font-size: 30px;
+    width: 100%;
+}
+
+.product-selected-price ,.product-selected-state{
+    color: rgb(0, 58, 0);
+    font-size: 26px;
+    display: inline-block;
+}
+
+.product-selected-state{
+    float: right;
+    margin-right: 30px;
+}
+
+.product-selected-contact{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.product-selected-description-container{
+    width: auto;
+    height: 350px;
+    overflow-y: scroll;
+}
+
+.product-selected-description{
+    padding: 5px;
+}
+
+.close-button-fieldset{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.close-button{
+    float: right;
+    height: 23px;
+    width: 60px;
+    border: 0;
+    background-color: #A8B4FF;
+    cursor: pointer;
+}
+
+.close-button:hover{
+    background-color: rgb(223, 58, 58);
+}
+
+.close-button:active{
+    background-color: rgb(105, 14, 14);
+}
+
+.add-button-fieldset{
+    border: 0;
+    padding: 0;
+    width: 260px;
+    margin-top: auto;
+}
+
+.add-button-label{
+    width: 160px;
+    display: block;
+    margin: auto auto;
+    padding-top: 20px;
+    height: 80px;
+    border: 0;
+    display: block;
+    background-color:  #6979e0;
+    cursor: pointer;
+}
+
+.add-button{
+    display: none;
+}
+
+.add-button-label:hover{
+    background-color:  rgb(51, 124, 51);
+}
+
+.add-button-label:active{
+    background-color:  rgb(22, 88, 22);
+}
+
+
+
+/*-----------------Responsive-----------------*/
+
+/*Dispositivo Movil por anchura*/
+@media(max-width: 740px){
+	.left-container{
+        display: block;
+        width: auto;
+        height: auto;
+        
+    }
+    
+    .right-container{
+        display: block;
+        width: 290px;
+        height: auto;
+    }
+
+    .product-selected-container{
+        width: 100%;
+        height: 585px;
+        margin: auto;
+        margin-top: 0px;
+        overflow-y: scroll;
+    
+        background-color:#4C58A6;
+    }
+
+    .product-selected-info{
+        width: auto;
+    }
+
+    .product-selected-image-container {
+        width: auto;
+    }
+
+    .product-selected-info {
+        width: auto;
+    }
+
+    .product-selected-state{
+        float: none;
+        margin-left: 50px;
+    }
+    
+    .product-selected-contact{
+        width: 300px;
+    }
+
+    .product-selected-description-container{
+        height: auto;
+        overflow-y: none;
+    }
+    
+    .right-container{
+        width: 100%;
+    }
+
+    .add-button-fieldset{
+        width: 100%;
+    }
+}
+
+/*Dispositivo Movil por altura*/
+@media(max-height: 600px){
+	.product-selected-backgraund{
+        height: 100%;
+    }
+
+    .product-selected-backgraund .product-selected-container{
+        overflow-y: scroll;
+        height: 100%;
+    }
+}
+
+/*Tablets*/
+@media(min-width: 740px) and (max-width: 1024px){
+	.left-container{
+        display: inline-block;
+        width: 400px;
+        height: auto;
+        
+    }
+    
+    .right-container{
+        display: inline-block;
+        width: 290px;
+        height: auto;
+    }
+
+    .product-selected-container{
+        width: 700px;
+    }
+
+    .product-selected-description-container{
+        overflow-y: none;
+    }
+}
+
+/*Escritorio
+@media(min-width: 1024px){
+	.menu{
+		position: static;
+		width: auto;
+		height: auto;
+		transform: translateX(0%);
+		float: right;
+		display: flex;
+		background:#2b6c16;
+	}
+
+	.menu a{
+		border: none;
+	}
+	
+	header label{
+		display: none;
+	}
+}*/

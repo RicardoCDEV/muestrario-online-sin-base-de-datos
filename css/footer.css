@@ -1,0 +1,11 @@
+footer{
+    background-color: #4C58A6;
+    width: 100%;
+    height: 50px;
+}
+
+.footer-link{
+    color: #8998F3;
+    float: left;
+    margin: 14px;
+}

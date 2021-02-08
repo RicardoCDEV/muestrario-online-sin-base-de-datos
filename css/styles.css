@@ -1,0 +1,13 @@
+﻿@import url(cabecera.css);
+@import url(main.css);
+@import url(footer.css);
+
+body{
+	margin: 0;
+	background-color: #8998F3;
+	font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+}
+
+a{
+	text-decoration: none;
+}

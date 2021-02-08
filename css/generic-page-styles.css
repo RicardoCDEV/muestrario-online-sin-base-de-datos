@@ -1,0 +1,45 @@
+.generic-main-fieldset{
+    min-height: 500px;
+}
+
+.about-info{
+    padding: 0 26px;
+}
+
+.social-media-container, .creator-info{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+}
+
+.social-media{
+    width: 100px;
+    text-align: center;
+}
+
+.social-media img{
+    width: 50px;
+    display: block;
+    margin: 5px auto;
+}
+
+.social-media a, .atributions-list a, .repo-link{
+    text-decoration: none;
+    color:rgb(138, 5, 0);
+}
+
+.creator-name{
+    margin-bottom: 0;
+}
+
+@media(max-width: 739px){
+	.generic-main-fieldset{
+        border-width: 0px;
+        padding-left: 0px;
+    }
+
+    .generic-main-fieldset>legend{
+        margin-left: 20px;
+    }
+
+}

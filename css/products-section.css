@@ -1,0 +1,107 @@
+.products-section{
+	padding: 5px;
+}
+
+.products-fieldset{
+	border: 3px solid #4C58A6;
+}
+
+.products-container{
+    display:  grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.product{
+    background-color: #7d88c2;
+    margin: 5px;
+    border: 3px solid #4C58A6;
+    height: 350px;
+    cursor: pointer;
+}
+
+.product:hover{
+    background-color: #A8B4FF;
+}
+
+.product:hover:active{
+    background-color: #5f6dcc;
+}
+
+.product-image-container{
+    width: 245px;
+    height: 220px;
+    background-color: ivory;
+    border-bottom: 2px solid #4C58A6;
+}
+
+.product-image{
+    display: block;
+    margin: 0 auto;
+}
+
+.product-info{
+    width: 100%;
+    padding: 5px;
+}
+
+.product-name ,.product-price,.product-state ,.product-description{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.product-name{
+    margin-top: 0px;
+    color: black;
+}
+
+.product-price ,.product-state{
+    color: green;
+}
+
+
+/*-----------------Responsive-----------------*/
+
+/*Dispositivo Movil*/
+@media(max-width: 740px){
+	.products-container{
+        display:  grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-image-container{
+        width: 100%;
+    }
+}
+
+/*Tablets*/
+@media(min-width: 740px) and (max-width: 1024px){
+	.products-container{
+        display:  grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-image-container{
+        width: 100%;
+    }
+}
+
+/*Escritorio
+@media(min-width: 1024px){
+	.menu{
+		position: static;
+		width: auto;
+		height: auto;
+		transform: translateX(0%);
+		float: right;
+		display: flex;
+		background:#2b6c16;
+	}
+
+	.menu a{
+		border: none;
+	}
+	
+	header label{
+		display: none;
+	}
+}*/

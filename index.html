@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Domestic Store - Venta de cosas usadas y nuevas a bajos precios en Venezuela</title>
+		<meta charset="UTF-8">
+		
+		<!--************ESTILOS***********-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/generic-page-styles.css">
+		<link rel="stylesheet" href="css/fontello.css">
+	</head>
+	
+	
+	<body>
+		<!--************INICIO DE HEADER************-->
+		<div class="background2">
+			
+		</div>
+		<header>
+			<input type="checkbox" id="menu-bar">
+			<label for="menu-bar" class="icon-menu"></label>
+			<nav>
+				<ul>
+					<a href="index.html"><li class="menu-bar-link">Estanteria</li></a>
+					<a href="pages/about.html"><li class="menu-bar-link">Sobre Nosotros</li></a>
+				</ul>
+			</nav>
+			<input type="checkbox" id="cotization-bar">
+			<label for="cotization-bar" class="cotization-label">
+				<div class="dolar-cotization-container">
+					<p>Presiona para ver valor del $ de DolarToday</p>
+				</div>
+			</label>
+			<div class="background">
+			
+			</div>
+			<span class="twitter-span">
+				<a class="twitter-timeline" data-lang="es" data-width="400" data-height="400" data-theme="dark" href="https://twitter.com/MonitorDolarOf?ref_src=twsrc%5Etfw">Tweets by MonitorDolarOf</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</span>
+		</header>
+		<!--************FIN DE HEADER************-->
+
+		
+		<!--************INICIO DE MAIN************-->
+		<main>
+			<!--************INICIO DE DE LA SECCION DE FILTROS************-->
+			<section class="filter-section">
+				<fieldset class="filter">
+					<legend>Filtros:</legend>
+					<div class="filter-chackboxs">
+						
+					</div>
+					<div>
+						<input type="submit" value="Aplicar" id="filter-button">
+						<input type="submit" value="Quitar filtros" id="quitar-filtros-button">
+					</div>
+				</fieldset>
+			</section>
+			<!--************FIN DE DE LA SECCION DE FILTROS************-->
+
+
+			
+
+
+			<!--************INICIO DE DE LA SECCION DE PRODUCTOS************-->
+			<section class="products-section">
+				<fieldset class="products-fieldset generic-main-fieldset">
+					<legend>Productos</legend>
+					<div class="products-container">
+						
+					</div>
+				</fieldset>
+			</section>
+			<!--************FIN DE LA SECCION DE PRODUCTOS************-->
+		
+			<!--************INICIO DE LA SECCION DE CARRITO************-->
+			<label class="icon-basket carrito-icon" for="carrito"></label>
+			<input type="button" id="carrito">
+			<!--************INICIO DE LA SECCION DE CARRITO************-->
+
+			<!--************INICIO DE LA SECCION DEL CONTENIDO DEL CARRITO************-->
+			<section class="carrito-content-section" id="background-carrito">
+				<div class="carrito-content-container">
+					<h2 class="carrito-title">Mi carrito:</h2>
+					<fieldset class="close-button-fieldset-carrito">
+						<label>
+							<input type="button" id="close" value="X" class="close-button-carrito">
+						</label>
+					</fieldset>
+					<div class="carrito-items">
+						
+
+						<table class="carrito-table">
+							<thead class="carrito-info-head">
+								<th class="carrito-info-colum">Imagen</th>
+								<th class="carrito-info-colum">Nombre</th>
+								<th class="carrito-info-colum">Precio</th>
+								<th class="carrito-info-colum">Cant</th>
+							</thead>
+							<tbody class="carrito-products">
+								
+							</tbody>
+							<tfoot class="carrito-foot">
+								<tr>
+									<th class="carrito-info-colum">
+
+									</th>
+									<th class="carrito-info-colum">
+									
+									</th>
+									<th class="carrito-info-colum">
+									
+									</th>
+									<th class="carrito-info-colum">
+										<p class="total-text">Total: $0</p>
+									</th>
+								</tr>
+							</tfoot>
+						</table>
+						<p class="carrito-total"></p>
+					</div>
+				</div>
+			</section>
+			<!--************INICIO DE LA SECCION DEL CONTENIDO DEL CARRITO************-->
+		
+		<!--************INICIO DE DE LA SECCION DELPRODUCTO SELECCIONADO************-->
+		<section class="product-selected-section">
+			<div class="product-selected-backgraund">
+				<div class="product-selected-container">
+					<fieldset class="close-button-fieldset">
+						<label>
+							<input type="button" id="close" value="X" class="close-button">
+						</label>
+					</fieldset>
+					<div class="left-container">
+						<div class="product-selected-image-container">
+							<img src="img/Estructura de la página.png" alt="" class="product-selected-image">
+						</div>
+						<div class="product-selected-info">
+							<h3 class="product-selected-name">NOMBRE</h3>
+							<h4 class="product-selected-price">$PRECIO</h4>
+							<h4 class="product-selected-state">ESTADO</h4>
+							<h4 class="product-selected-contact">Vendedor(a): Beatriz Pérez (0424-123-45-67)</h4>
+						</div>
+					</div>
+					<div class="right-container">
+						<div class="product-selected-description-container">
+							<p class="product-selected-description">Una breve descripcion del producto en la que se hable del producto</p>
+						</div>
+						<fieldset class="add-button-fieldset">
+							<label class="add-button-label" for="">
+								<p class="icon-basket">Añadir al carrito</p>
+								<input type="button" id="" value=""  class="add-button">
+							</label>
+						</fieldset>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--************FIN DE DE LA SECCION DELPRODUCTO SELECCIONADO************-->
+			
+		</main>
+		<!--************FIN DE MAIN************-->
+		
+		<!--************INICIO DE FOOTER************-->
+		<footer>
+				<a href="#" class="footer-link">Sobre nosotros</a>
+		</footer>
+		<!--************FIN DE FOOTER************-->
+
+		<!--************INICIO DE LOS SCRIPTS************-->
+		<script src="js/general.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/filters.js"></script>
+		<script src="js/carrito.js"></script>
+		<script src="js/selectedproduct.js"></script>
+		<!--************FIN DE LOS SCRIPTS************-->
+	</body>
+	
+</html>

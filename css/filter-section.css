@@ -1,0 +1,100 @@
+﻿.filter-section{
+	padding: 5px;
+}
+
+.filter{
+	border: 3px solid #4C58A6;
+}
+
+.filter-container{
+	width: 220px;
+}
+
+.filter-chackboxs{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+#filter-button, #quitar-filtros-button{
+	margin-top: 10px;
+	border: 1px solid #4C58A6;
+	background: #A8B4FF;
+	border: 0;
+	padding:  5px;
+}
+
+.categoria{
+  display: none;
+}
+
+.checkbox-label{
+	background-color: #4C58A6;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0 10px;
+}
+
+.categoria:checked ~ .checkbox-label{
+	background-color: #A8B4FF;
+}
+
+.label-text{
+	display: inline-block;
+}
+
+.icon-ok{
+	font-size: 16px;
+	color: #4C58A6;
+}
+
+#filter-button:hover:active, #quitar-filtros-button:hover:active{
+	background-color: #4C58A6;
+}
+
+#filter-button:hover, #quitar-filtros-button:hover{
+	background-color: #6979e0;
+}
+
+/*-----------------Responsive-----------------*/
+
+/*Dispositivo Movil
+@media(min-width: 345px){
+	
+}*/
+
+/*Tablets*/
+@media(max-width: 740px){
+	.filter-container{
+		width: auto;
+	}
+	
+	.filter-chackboxs{
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	#quitar-filtros-button{
+		margin-left: 10px;
+	}
+
+	#filter-button, #quitar-filtros-button{
+		font-size: 25px;
+	}
+
+	.checkbox-label{
+		width: 30px;
+		height: 30px;
+	}
+
+	.icon-ok{
+		font-size: 24px;
+		color: #4C58A6;
+	}
+}
+
+/*Tablet*/
+@media (min-width: 740px) and (max-width: 1024px){
+	.filter-chackboxs{
+		grid-template-columns: repeat(3, 1fr);
+	}
+}

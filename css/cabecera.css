@@ -1,0 +1,110 @@
+﻿header{
+	background-color: #4C58A6;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	height: 80px;
+}
+
+/*------------INICIO DE ESTILOS DE NAVBAR-------------*/
+
+#menu-bar{
+	display: none;
+}
+
+#menu-bar:checked ~ nav{
+	transform: translateX(0%);
+}
+
+
+
+.icon-menu{
+	font-size: 50px;
+	display: inline-block;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+nav{
+	position: absolute;
+	top: auto;
+	
+	background-color: #4C58A6;
+	
+	width: 100%;
+	height: auto;
+	
+	transition: all 0.5s;
+	transform: translateX(-100%);
+}
+
+nav>ul{
+	list-style: none;
+}
+
+
+
+.menu-bar-link{
+	height: 60px;
+	width: 90%;
+	display: block;
+	border-bottom: 2px solid black;
+}
+
+.menu-bar-link:hover{
+	background: #A8B4FF;
+}
+
+a .menu-bar-link{
+	font-size: 30px;
+	color: black;
+	float: left;
+	display: block;
+	padding-left: 6px;
+	padding-top: 22px;
+}
+
+/*------------FIN DE ESTILOS DEL NAVBAR-------------*/
+
+
+/*------------INICIO ESTILOS DE LA PARTE DE COTIZACIONES-------------*/
+
+.cotization-label{
+	display: inline-block;
+	float: right;
+	cursor: pointer;
+}
+
+#cotization-bar{
+	display: none;
+}
+
+.dolar-cotization-container{
+	background-color: #A8B4FF;
+	margin-top: 12px;
+	margin-right: 14px;
+	padding: 0 5px;
+	border-radius: 8px ;
+	border: 3px solid #8998F3;
+}
+
+.twitter-span{
+	display: block;
+	float: right;
+	border-radius: 5px;
+	border: 3px solid #A8B4FF;
+	position: absolute;
+	
+	transition: all 0.5s;
+	transform: translateY(-200%);
+}
+
+#cotization-bar:checked~.twitter-span{
+	transform: translateY(20%);
+}
+
+#menu-bar:checked ~ .twitter-span{
+	transform: translateY(-200%);
+}
+
+/*------------FIN ESTILOS DE LA PARTE DE COTIZACIONES-------------*/
