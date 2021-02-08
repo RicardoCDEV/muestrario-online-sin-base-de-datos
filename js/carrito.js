@@ -16,7 +16,9 @@ cargarProductosACarrito();
 
     function cargarProductosACarrito(){
         const myProducts = JSON.parse(localStorage.getItem("productosEnCarrito"));
-        myProducts.forEach(producto=>checkProduct(producto.id, producto.cant));
+        if(myProducts!==null){
+            myProducts.forEach(producto=>checkProduct(producto.id, producto.cant));
+        }
     }
 
     function guardarEnMemoria(){
